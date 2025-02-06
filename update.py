@@ -65,7 +65,7 @@ def insert_order(connection, order_id, customer_id, order_date, amount):
     cursor = connection.cursor()
     cursor.execute(insert_sql, (order_id, customer_id, order_date, amount))
     connection.commit()
-    print(f"Order {order_id} inserted successfully.")
+    print(f"Order {order_id} inserted successfully!")
     cursor.close()
 
 def customer_exists(connection, customer_id):
